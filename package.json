@@ -1,0 +1,28 @@
+{
+  "name": "end-user-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mkdirp report && cucumber-js --require cucumber.conf.js --require steps-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "babel-preset-es2015": "^6.24.1",
+    "chromedriver": "^81.0.0",
+    "cucumber": "^6.0.5",
+    "cucumber-html-reporter": "^5.1.0",
+    "cucumber-pretty": "^6.0.0",
+    "faker": "^4.1.0",
+    "mkdirp": "^0.5.1",
+    "nightwatch": "^1.3.2",
+    "nightwatch-api": "^3.0.1"
+  },
+  "dependencies": {
+    "geckodriver": "^1.19.1"
+  }
+}
